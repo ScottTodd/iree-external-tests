@@ -14,5 +14,7 @@ set(IREE_EXTERNAL_TESTS_SOURCE_DIR "${CMAKE_CURRENT_LIST_DIR}")
 # add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/tools/plugins AMD-AIE/tools)
 # add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/tests/samples AMD-AIE/tests/samples)
 
+add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/compiler/plugins/target/VMVXExternal target/VMVXExternal)
+
 # This writes to D:\dev\projects\iree-xb\compiler\plugins\external\tests
 add_subdirectory(${CMAKE_CURRENT_LIST_DIR}/tests external/tests)

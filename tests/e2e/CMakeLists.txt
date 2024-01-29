@@ -20,4 +20,20 @@ iree_check_single_backend_test_suite(
     "tosa"
 )
 
-# TODO(scotttodd): try with TARGET_BACKEND and DRIVER from plugins
+# This needs updates in https://github.com/openxla/iree/blob/1c83020136b9d3d56da692036e5bbcb2b4586ebf/build_tools/cmake/iree_check_test.cmake#L97-L103
+
+# iree_check_single_backend_test_suite(
+#   NAME
+#     check_external_vmvx-external_local-task
+#   SRCS
+#     "abs.mlir"
+#     "add.mlir"
+#   TARGET_BACKEND
+#     "vmvx-external"
+#   DRIVER
+#     "local-task"
+#   INPUT_TYPE
+#     "tosa"
+# )
+
+# TODO(scotttodd): try with plugin-provided DRIVER

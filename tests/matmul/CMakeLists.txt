@@ -68,3 +68,22 @@ iree_generated_e2e_matmul_test(
   COMPILER_FLAGS
   LABELS
 )
+
+iree_generated_e2e_matmul_test(
+  NAME
+    external_vmvx_e2e_matmul_dt_f32_f32_small
+  GENERATOR
+    "generate_e2e_matmul_tests.py"
+  GENERATOR_ARGS
+    "--lhs_rhs_type=f32"
+    "--acc_type=f32"
+    "--shapes=small"
+  TEST_RUNNER
+    iree-e2e-matmul-test
+  TARGET_BACKENDS
+    "vmvx-external"
+  DRIVERS
+    "local-task"
+  COMPILER_FLAGS
+  LABELS
+)
