@@ -1,0 +1,15 @@
+# Python
+.env
+*.pyc
+**/.ipynb_checkpoints/
+.pytype/
+**/__pycache__/**
+
+# CMake artifacts
+build/
+build-*/
+Testing/
+
+# Executables
+*.exe
+*.out
